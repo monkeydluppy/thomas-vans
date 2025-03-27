@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    /* scrollbar-color: red transparent; */
+    /* scrollbar-width: thin; */
+}
+*::selection {
+    background: var(--black);
+    color: var(--white);
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #745850;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    transition: 0.5s font-size ease;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--white);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* html.hidden,
+html.hidden body {
+    height: 100vh !important;
+    overflow: hidden !important;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+img,
+video {
+    width: 100%;
+}
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dark-alt);
+    line-height: 160%;
+    letter-spacing: 0.5px;
+}
+p a {
+    color: var(--primary);
+    transition: 0.5s ease all;
+}
+p a:hover {
+    color: var(--secondary);
+}
+
+.section {
+    padding: 100px 0;
+    color: white;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
